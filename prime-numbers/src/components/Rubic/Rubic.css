@@ -1,0 +1,30 @@
+.rubik {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 50px;
+    margin: auto;
+}
+
+.rubik-cube {
+    width: calc(100% / 8);
+    aspect-ratio: 1/1;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px */
+}
+
+.prime {
+    background-color: red;
+}
+
+.even {
+    background-color: green;
+}
+
+.odd {
+    background-color: rgb(196, 196, 65);
+}

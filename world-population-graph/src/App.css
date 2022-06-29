@@ -1,0 +1,41 @@
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 15px
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.country-name {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+
+.column.population-column {
+  width: 100%;
+}
+
+.population {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(187, 174, 93);
+  border-radius: 2px;
+}
