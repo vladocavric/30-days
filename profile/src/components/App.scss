@@ -1,0 +1,80 @@
+.App {
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &.dark {
+    color: white;
+    .App-header, .Main, footer {
+      background-color: #0F172A;
+    }
+    .App-header {
+      border-bottom: 1px solid white;
+    }
+
+    footer {
+      border-top: 1px solid white;
+    }
+  }
+}
+
+.App-header {
+  background-color: #5FDBFB;
+  padding: 30px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #66CBFF;
+  padding: 10px;
+}
+
+.skills {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 800px;
+}
+
+.skill {
+  background-color: #2ACFCF;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+.skill:hover {
+  background-color: #269696;
+}
+
+img {
+  width: 300px;
+  // aspect-ratio: 1/1;
+  vertical-align: middle;
+  
+}
+
+.img-wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.main {
+  padding: 30px;
+  min-height: calc(100vh - 337px);
+  flex-grow: 16;
+}
