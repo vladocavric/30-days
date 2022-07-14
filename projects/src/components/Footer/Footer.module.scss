@@ -1,0 +1,43 @@
+@import '../../styles/vairables';
+@import '../../styles/mixins';
+
+.Footer {
+	// background-color: aqua;
+	text-align: center;
+	background-color: $light-periwinkle;
+	padding: 40px;
+	font-size: 1.8rem;
+	font-family: 'Roboto', sans-serif;;
+	font-weight: 300;
+	position: relative;
+
+	margin-top: auto;
+
+	a {
+		color: purple;
+		transition: text-decoration 0.3s;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	:global {
+		.blue {
+			background-color: $purple-heart;
+			@include mq('to', 1500) {
+				background-color: red;
+			}
+		}
+
+		.scrollUp {
+			position: absolute;
+			right: 55px;
+			bottom: 15px;
+			font-size: 60px;
+		}
+	}
+
+	&__text {
+		color: orange;
+	}
+}

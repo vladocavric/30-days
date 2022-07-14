@@ -1,0 +1,14 @@
+.CatList {
+    // background-color: red;
+    text-align: center;
+    height: 100%;
+    flex-grow: 15;
+    :global {
+        .lds-ring {
+            text-align: center;
+        }
+        .lds-ring div {
+            border-color: green transparent transparent transparent;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $tropical-blue;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $tropical-blue-dark;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: fade-out($tropical-blue-dark, 0.2);
+  }
+  

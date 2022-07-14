@@ -1,0 +1,16 @@
+.NavBar {
+	:global {
+        a {
+            color: white; 
+            &.active {
+                color: red;
+            }
+        }
+	}
+
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+
+	
+}
