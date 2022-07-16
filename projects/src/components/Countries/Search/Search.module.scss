@@ -1,0 +1,27 @@
+.Search {
+	text-align: center;
+
+	&__Input {
+		color: orange;
+		width: 50%;
+		height: 9rem;
+		margin: 5rem auto;
+		text-indent: 3rem;
+		outline: none;
+		border: 0.4rem solid #f8e7e7;
+		font-size: 3.5rem;
+		border-radius: 6rem;
+		background: #faf6f6;
+
+		&:hover,
+        &:focus {
+			box-shadow: 0 0 0.1rem 0.1rem #ece6e6;
+			background: #faf6f6;
+		}
+	}
+
+    svg {
+        font-size: 56px;
+    color: orange;
+    }
+}

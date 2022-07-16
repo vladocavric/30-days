@@ -1,0 +1,23 @@
+.Countries {
+    text-align: center;
+
+    &__Wrapper {
+        background: #f0f0f0;
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        justify-content: space-around;
+        justify-items: center;
+        gap: 15px;
+        margin: 1rem 0 3rem;
+        padding: 1rem;
+    }
+    :global {
+        .lds-ring {
+            text-align: center;
+        }
+        .lds-ring div {
+            border-color: green transparent transparent transparent;
+        }
+    }
+}

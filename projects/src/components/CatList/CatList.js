@@ -1,6 +1,7 @@
 import { useEffect, useReducer, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
+import Header from '../Header/Header';
 import CatCard from './CatCard/CatCard';
 import CatFilters from './CatFilters/CatFilters';
 import catsReducer from '../../store/reducers/cats';
@@ -47,9 +48,9 @@ const CatList = () => {
 			{loading && <Loader />}
 			{!loading && (
 				<>
+				<Header />
 					{pathname.includes('day-20') && <CatFilters cats={cats} handleCatFilter={handleCatFilter} />}
                     {filteredCats.map(cat => <CatCard key={cat.id} cat={cat} />)}
-					
 				</>
 			)}
 		</div>

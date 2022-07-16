@@ -5,11 +5,15 @@ const CatFilters = ({ cats, handleCatFilter }) => {
 	const setCountries = new Set(countries);
 	for (let country of setCountries) {
 		const countryList = cats.filter(({ origin }) => origin === country);
+		// console.log(countryList)
 		catsByCountry.push(countryList);
 	}
+	// console.log(catsByCountry)
 	const sortedCatsByCountry = [...catsByCountry].sort((a, b) => {
 		return b.length - a.length;
 	});
+
+    
 
 	return (
 		<div>

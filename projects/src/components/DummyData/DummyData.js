@@ -1,7 +1,12 @@
-const DummyData = () => {
-    return(
-        <div>aaa</div>
-    )
-}
+import Header from '../Header/Header';
 
-export default DummyData
+const DummyData = () => {
+	return (
+		<div>
+			<Header />
+            aaa
+		</div>
+	);
+};
+
+export default DummyData;
