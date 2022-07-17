@@ -9,12 +9,21 @@ const Main = () => {
 		return Math.floor(Math.random() * 250);
 	};
 
+	
+
 	useEffect(() => {
-		ApiService.getCountries().then((data) => {
-			setCountries(data.data);
-			setCountry(data.data[randomIndex()]);
-			console.log(country);
-		});
+		// ApiService.getCountries().then((data) => {
+		// 	setCountries(data.data);
+		// 	setCountry(data.data[randomIndex()]);
+		// 	console.log(country);
+		// });
+	
+		(async function() {
+			const data = await ApiService.getCountriesAsync();			
+			setCountries(data);
+			setCountry(data[randomIndex()]);
+		})()		
+
 	}, []);
 
 	let selectNewCountry = () => {
