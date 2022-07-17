@@ -11,6 +11,7 @@ const About = lazy(() => import('../components/About/About'));
 const DummyData = lazy(() => import('../components/DummyData/DummyData'));
 const CatList = lazy(() => import('../components/CatList/CatList'));
 const Countries = lazy(() => import('../components/Countries/Countries'));
+const HexColorGenerator = lazy(() => import('../components/HexColorGenerator/HexColorGenarator'));
 
 const AppRouter = () => {
 	// <div className='main'>
@@ -61,6 +62,14 @@ const AppRouter = () => {
 					element={
 						<Suspense fallback={<Loader />}>
 							<Countries />
+						</Suspense>
+					}
+				/>
+				<Route
+					path='/day-27/hex'
+					element={
+						<Suspense fallback={<Loader />}>
+							<HexColorGenerator />
 						</Suspense>
 					}
 				/>
